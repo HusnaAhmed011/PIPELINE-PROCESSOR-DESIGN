@@ -49,11 +49,12 @@ The testbench generates the clock and reset signals and then observes how data f
 print the values of PC and registers at each cycle.
 
 ## Conclusion:
+
 The 4-stage pipelined processor successfully executed ADD, SUB and LOAD instructions and produced correct results in both the terminal output and GTKWAVE waveform. The movement of instructions through the stages happened in proper timing order, and register values were updated only after the Write-Back stage, proving that the pipelining mechanism worked correctly. The simulation confirmed that the design behaved exactly as expected and demonstrated the performance advantage of pipelining compared to single-cycle execution.
 
 # OUTPUT 
 
-#### GTKWAVE
+#### GTKWAVE:
 
 <img width="1496" height="946" alt="Image" src="https://github.com/user-attachments/assets/3d31eddb-f5e2-445e-801d-5c3697fb07ec" />
 
