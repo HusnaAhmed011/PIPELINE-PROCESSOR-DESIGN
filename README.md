@@ -55,8 +55,8 @@ The ALU implemented all the necessary functions, addition, subtraction, AND, OR 
 
 #### GTKWAVE:
 
-<img width="1920" height="1129" alt="Image" src="https://github.com/user-attachments/assets/086b8192-279c-4f50-9979-bca8d3279f6c" />
+<img width="1496" height="946" alt="Image" src="https://github.com/user-attachments/assets/3d31eddb-f5e2-445e-801d-5c3697fb07ec" />
 
 #### VS TERMINAL:
 
- <img width="455" height="485" alt="Image" src="https://github.com/user-attachments/assets/1a7b198c-f7e9-4ef2-9bd7-a9ab3a32c293" />
+<img width="1282" height="831" alt="Image" src="https://github.com/user-attachments/assets/d9ab2dec-53cd-4417-ad33-35ce8f9265f4" />
