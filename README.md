@@ -29,7 +29,7 @@ GTKWave was then applied to open the generated VCD file to visualize the transit
 
           code: gtkwave
           
-he waveform clearly showed the movement of instructions through the four pipeline stages over time and how the PC, pipeline registers, ALU result, and general-purpose registers changed with each clock cycle. It was easy to see when an instruction entered the pipeline, when it reached the execute stage, and when the result was written back. The register values updated exactly at the Write-Back stage, proving that the pipeline timing worked correctly. The waveform closely matched the values printed in the terminal, confirming that the ADD, SUB and LOAD instructions produced correct outputs and that the processor design and testbench were functioning properly without glitches or invalid data transitions.
+The waveform was a clear display of how instructions moved through the four stages of pipeline over a period of time and the changes in PC, pipeline registers, ALU result, and general-purpose registers on every clock cycle. Once an instruction was enrolled into the pipeline it was simple to know when it had been received, it was at the execute stage and the result had been written back. The value of the registers at the Write-Back stage corresponded to the correct value, which demonstrated that the pipeline timing was correct. With the waveform almost the same as the values displayed in the terminal, it was confirmed that the ADD, SUB and LOAD instructions were generating the right output as well as ensuring that the processor design and testbench were working correctly with no glitches or invalid data transitions.
 
 ### Behavioural & Testbench :
 The processor is written in behavioural Verilog using clock-driven
@@ -41,7 +41,6 @@ blocks, which model each pipeline stage (IF, ID, EX, WB). Instructions move thro
     code: case(opcode) 
  
  statement in the execute stage performs ADD, SUB, and LOAD operations. The register values update only in the Write-Back stage, which reflects real pipeline behaviour.
-
 The testbench generates the clock and reset signals and then observes how data flows through the pipeline.The statement 
 
     code: $display
@@ -50,7 +49,7 @@ print the values of PC and registers at each cycle.
 
 ## Conclusion:
 
-The 4-stage pipelined processor successfully executed ADD, SUB and LOAD instructions and produced correct results in both the terminal output and GTKWAVE waveform. The movement of instructions through the stages happened in proper timing order, and register values were updated only after the Write-Back stage, proving that the pipelining mechanism worked correctly. The simulation confirmed that the design behaved exactly as expected and demonstrated the performance advantage of pipelining compared to single-cycle execution.
+The pipelined processor achieved a success with the implementation of ADD, SUB and LOAD commands and also generated the right output in the terminal output and the GTKWAVE waveform. The flow of instructions through the stages, as well as the updating of register values were performed in the correct order of sequence and this proved that the pipelining mechanism was working in the right way. The simulation was able to confirm that the design actually worked as desired, and also illustrated the performance benefit of pipelining over single-cycle execution.
 
 # OUTPUT 
 
